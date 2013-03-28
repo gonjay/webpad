@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title> </title>
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet" type="style/css">
+  <meta name="description" content="Tutorial : Showing Image With Bounce Effect">
+  <meta name="author" content="Webstuffshare">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script languge="javascript"></script>
+  <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script> 
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="../js/bootstrap-modal.js"></script>
+  <script src="./js/application.js"></script>
+  <script src="./js/bootstrap-tooltip.js"></script>
+<!--   /*  <script src="./js/bootstrap-popover.js"></script>*/ -->
+<script>
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+        $("#btn2").append("<p>武昌鱼<small>68元/份</small></p>");
+      })
+    });
+    </script>
+
+</head>
+<body>
+  <div class="container">
+       <!--header begin-->
+     <!--  <div id="header" class="row binded" style="margin:0px;">
+        <div class="logo">
+          <a href="#"><h2>餐馆名</h2></a>
+        </div>
+        <div class="span6">
+          <ul class="nav nav-pills">
+            <li ><a href="#">肉类</a></li>
+            <li><a href="plain.html">素菜</a></li>
+            <li><a href="#">凉菜</a></li>
+            <li><a href="#">汤类</a></li>
+            <li><a href="#">酒水</a></li>
+          </ul>
+        </div>
+      </div> -->
+      <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse">
+      <ul class="nav">
+              <li class="">
+                <a href="#">概述</a>
+              </li>
+              <li class="">
+                <a href="dashboard.html">框架</a>
+              </li>
+              <li class="">
+                <a href="#">基础CSS</a>
+              </li>
+              <li class="active">
+                <a href="#">组件</a>
+              </li>
+              <li class="">
+                <a href="#">Javascript插件</a>
+              </li>
+              <li class="">
+                <a href="#">使用LESS</a>
+              </li>
+              
+              
+       
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- header end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row" style="margin-top:20px;">
+          <div class="span2 leftnavbar" data-spy="scroll">
+       <button class="btn btn-success btn_m">菜单</button>
+            <button class="btn" data-toggle="modal" href="#myModal">修改</button>
+                  <div id="myModal" class="modal hide">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>添加成功</h3>
+            </div>
+            <div class="modal-body">
+              <h4>精致点心</h4>
+              <p>
+               购物车共有一件商品，合计：￥19.00
+              </p>
+                <p class="pull-right"><button class="btn btn-warning"><a href="buy_now.html">去结账</a></button></p>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn" data-dismiss="modal">关闭</a>
+            </div>
+          </div>
+
+        <div data-spy="scroll" data-target="#navbarExample" data-offset="0" class="scrollspy-example">
+        <div id="btn2"></div>
+          </div>
+        </div>
+        <div class="span11 offset2" style="margin-top:50px;">
+          <div class="span3">
+             <a href="#"><img src="./img/u=585481924,2017029078&amp;fm=52&amp;gp=0.jpg" class="img-polaroid"></a>
+            <table class="table tableed table-bordered table-w">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#" id="btn1"><img src="./img/acion.jpg" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                     <a href="#" rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/aicon2.jpg"></a>
+                  
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+           <div class="span3">
+             <a href="#"><img src="./img/u=555602782,4205872154&fm=23&gp=0.jpg" class="img-polaroid" style="height:147px"></a>
+            <table class="table tableed table-bordered table-w">
+              <tbody>
+                <tr>
+                  <td>
+                     <a href="#" id="btn3"><img src="./img/acion.jpg" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                     <a href="#" rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/one (2).jpg"></a>
+                 
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+           <div class="span3">
+             <a href="#"><img src="./img/u=795746975,2057597204&fm=23&gp=0.jpg" class="img-polaroid" style="width:220px;height:147px"></a>
+            <table class="table tableed table-bordered table-w">
+              <tbody>
+                <tr>
+                  <td>
+                     <a href="#" id="btn4"><img src="./img/acion.jpg" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                    <a href="#" rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/one (2).jpg"></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+
+
+
+      
+
+<div class="span11" style="margin:30px 0;">
+ <div class="span3">
+             <a href="#"><img src="./img/u=585481924,2017029078&amp;fm=52&amp;gp=0.jpg" class="img-polaroid"></a>
+            <table class="table tableed table-bordered table-w">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#"><img src="./img/plus.png" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                     <a href="#" rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/forward.png"></a>
+                  
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+           <div class="span3">
+             <a href="#"><img src="./img/u=585481924,2017029078&amp;fm=52&amp;gp=0.jpg" class="img-polaroid"></a>
+            <table class="table tableed table-bordered table-w">
+              <tbody>
+                <tr>
+                  <td>
+                     <a href="#"><img src="./img/plus.png" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                     <a href="#" rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/forward.png"></a>
+                 
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+           <div class="span3">
+             <a href="#"><img src="./img/u=585481924,2017029078&amp;fm=52&amp;gp=0.jpg" class="img-polaroid"></a>
+            <table class="table tableed table-bordered table-w">
+              <tbody>
+                <tr>
+                  <td>
+                     <a href="#"><img src="./img/plus.png" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                    <a href="#"  rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/forward.png"></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+
+
+
+
+
+
+
+<div class="span11" style="margin:30px 0;">
+ <div class="span3">
+             <a href="#"><img src="./img/u=585481924,2017029078&amp;fm=52&amp;gp=0.jpg" class="img-polaroid"></a>
+            <table class="table tableed table-bordered table-w">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#"><img src="./img/plus.png" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                     <a href="#" rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/forward.png"></a>
+                  
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+           <div class="span3">
+             <a href="#"><img src="./img/u=585481924,2017029078&amp;fm=52&amp;gp=0.jpg" class="img-polaroid"></a>
+            <table class="table tableed table-bordered table-w">
+              <tbody>
+                <tr>
+                  <td>
+                     <a href="#"><img src="./img/plus.png" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                     <a href="#" rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/forward.png"></a>
+                 
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+           <div class="span3">
+             <a href="#"><img src="./img/u=585481924,2017029078&amp;fm=52&amp;gp=0.jpg" class="img-polaroid"></a>
+            <table class="table tableed table-bordered table-w">
+              <tbody>
+                <tr>
+                  <td>
+                     <a href="#"><img src="./img/plus.png" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                    <a href="#" rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/forward.png"></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+
+
+<div class="span11" style="margin:30px 0;">
+ <div class="span3">
+             <a href="#"><img src="./img/u=585481924,2017029078&amp;fm=52&amp;gp=0.jpg" class="img-polaroid"></a>
+            <table class="table tableed table-bordered table-w">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#"><img src="./img/plus.png" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                     <a href="#" rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/forward.png"></a>
+                  
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+           <div class="span3">
+             <a href="#"><img src="./img/u=585481924,2017029078&amp;fm=52&amp;gp=0.jpg" class="img-polaroid"></a>
+            <table class="table  table-bordered table-w tableed">
+              <tbody>
+                <tr>
+                  <td>
+                     <a href="#"><img src="./img/plus.png" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                     <a href="#"  rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/forward.png"></a>
+                 
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+           <div class="span3">
+             <a href="#"><img src="./img/u=585481924,2017029078&amp;fm=52&amp;gp=0.jpg" class="img-polaroid"></a>
+            <table class="table tableed table-bordered table-w">
+              <tbody>
+                <tr>
+                  <td>
+                     <a href="#"><img src="./img/plus.png" class="icon-w"></a>
+                  </td>
+                  <td>精致点心<em class="pull-right">￥19</em></td>
+                  <td>
+                    <a href="#" rel="popover" title="做可以做的事情" data-content="在没找到重新开始的理由前，别给自己太多退却的借口。人生的败笔，总是坚持得太短，放手得太早。不要抱怨出身、天赋、背景、运气那些与你无缘的东西，很多时候英雄不问来路，就看你是否站在该站的位置，做可以做的事情，就看你能否咬牙多一些固守与忍耐。寂静时懂花开的声音，孤独处知命脉的走向。"> <img src="./img/forward.png"></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+          </div>
+
+
+
+
+
+</body>
+</html>
